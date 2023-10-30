@@ -18,6 +18,6 @@ python main.py
 0x05-python-exceptions
 
 ## Resources
-Python documentation
-Stack Overflow
-GitHub Guides
+- Python documentation
+- Stack Overflow
+- GitHub Guides
