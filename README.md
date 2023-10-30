@@ -6,7 +6,7 @@ To use these projects, you will need to have Python 3 installed on your computer
 
 ## Usage
 Each project is contained in its own directory. To run a project, navigate to its directory and run the main Python file.
-python
+
 python main.py
 
 ## Projects
