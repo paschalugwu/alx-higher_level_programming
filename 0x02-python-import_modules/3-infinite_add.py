@@ -8,13 +8,19 @@ if __name__ == "__main__":
     # Initialize a variable  total  to store the sum of the arguments:
     total = 0
     """
-    Use a  for  loop to iterate over the command-line arguments
-    and add them to the  total  variable:
+    Find the length of the  sys.argv  list to determine the
+    number of arguments:
     """
-    for i in range(len(sys.argv) - 1):
-        total += int(sys.argv[i + 1])
-        """
-        Print the  total  value followed by a new
-        line using string formatting:
-        """
-        print("{}".format(total))
+    length = len(sys.argv)
+    """
+    Use a loop to iterate over the command-line arguments and
+    add them to the  total variable. Start the loop from index
+    1 to exclude the script name itself:
+    """
+    for i in range(1, length):
+        total += int(sys.argv[i])
+    """
+    Print the  total  value followed by a new
+    line using string formatting:
+    """
+    print("{}".format(total))
