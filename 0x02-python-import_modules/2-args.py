@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-# Import the  sys  module to access the command-line arguments
-import sys
 
 """
 Use the  if __name__ == "__main__":  condition to ensure
@@ -9,6 +7,9 @@ the code is only executed when the script is run directly,
 not when imported as a module
 """
 if __name__ == "__main__":
+
+    # Import the  sys  module to access the command-line arguments
+    import sys
 
     # Get the number of arguments passed to the script using  len(sys.argv)
     num_args = len(sys.argv) - 1
