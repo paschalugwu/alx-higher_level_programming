@@ -7,32 +7,33 @@ parameters: tuple_a and tuple_b
 
 def add_tuple(tuple_a=(), tuple_b=()):
     """
-    Inside the function, let's check th length of
-    tuple_a using the len() functions. If tuple_a
-    has fewer than two elements, check if it has
-    zero elements
+    Let's create an empty tuple called `new_tuple` to store the result
     """
-    if len(tuple_a) < 2:
-        if len(tuple_a) == 0:
-            tuple_a = 0, 0
-            """
-            However, if tuple_a has zero elements,
-            assign it the value (0, 0)
-            """
-        else:
-            tuple_a[0], 0
+    new_tuple = ()
     """
-    Next, we handle case where tuple_b has fewer or
-    more than two elements
+    We're going to extend tuple_a with two additional elements,
+    each having the value 0. If a tuple has fewer than
+    two elements, the missing elements are assumed to be
+    0. This is handled by using the value 0 for each missing
+    integer when performing addition. If the tuple has more than
+    two elements, only the first two elements are considered
+    for addition. This ensures that the resulting tuple always has
+    exactly two elements.
     """
-    if len(tuple_b) < 2:
-        if len(tuple_b) == 0:
-            tuple_b = 0, 0
-        else:
-            tuple_b = tuple_b[0], 0
+    tuple_1 = tuple_a + (0, 0)
     """
-    Finally, let's return a new tuple with the first element as the addition
-    of the first elements of tuple_a and tuple_b, and the second element as
-    the addition of the second elements of tuple_a and tuple_b
+    Let's extend tuple_b with two additional elements
+    each having the value 0. We do this for the same reason why
+    we extended tuple_a above.
     """
-    return ((tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1]))
+    tuple_2 = tuple_b + (0, 0)
+    """
+    Let's calculate the first element of the new_tuple by adding the first
+    elements of tuple_1 and tuple_2, and calculate the secoond element by
+    adding the second element elements of tuple_1 and tuple_2
+    """
+    new_tuple = tuple_1[0] + tuple_2[0], tuple_1[1] + tuple_2[1]
+    """
+    Finally, we return the `new_tuple`
+    """
+    return new_tuple
