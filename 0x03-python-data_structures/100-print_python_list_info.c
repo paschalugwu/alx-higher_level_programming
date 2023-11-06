@@ -1,13 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <Python.h>
 #include <object.h>
 #include <listobject.h>
 
-/**
- * print_python_list_info - prints info about python lists
- * @p: address of pyobject struct
- */
 void print_python_list_info(PyObject *p)
 {
 	long int size = PyList_Size(p);
