@@ -16,7 +16,7 @@ def multiple_returns(sentence):
     equal to 0. If it is, create a new tuple with the sentence length
     and None as the first character
     """
-    if sentence == 0:
+    if sentence_length == 0:
         new_tuple = (sentence_length, None)
         """
         If the length of the sentence is not 0, create a new tuple with the
