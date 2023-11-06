@@ -18,9 +18,12 @@ def print_matrix_integer(matrix=[[]]):
         for j in i:
             """
             Inside the inner loop, let's print each integer using
-            str.format() and end the line with a space
+            str.format() and end the line with a space, if the current
+            integer `j` is not the last element in the row `i` (i.e.
+            j != i[-1]). This means that a space will be printed after
+            each integer except the last one  in a row.
             """
-            print("{:d}".format(j), end=" ")
+            print("{:d}".format(j), end=" " if j != i[-1] else "")
             """
             After the inner loop, print a new line to move to the next row
             """
