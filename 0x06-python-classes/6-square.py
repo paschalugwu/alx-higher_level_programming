@@ -19,8 +19,8 @@ class Square:
         """Inside the  __init__  method, initialize the private instance
         attributes  __size  and  __position  with the values of the
         parameters."""
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
         """Define a getter method for the size attribute using the @property
         decorator."""
     @property
