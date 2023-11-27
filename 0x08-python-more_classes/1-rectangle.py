@@ -1,35 +1,28 @@
 #!/usr/bin/python3
-"""The task requires you to write a class called Rectangle that defines
-a rectangle. The class should have private instance attributes width and
-height. It should also have getter and setter methods for both attributes.
-The getter methods should retrieve the values of the attributes, while the
-setter methods should set the values of the attributes after performing
-necessary checks. The class should be instantiated with optional width
-and height parameters. You are not allowed to import any modules.
-Start by defining the class Rectangle"""
+"""Defines a class Rectangle."""
 
 
 class Rectangle:
-    """Inside the clas, define the __init__ method with width and
-    height as optional parameters"""
+    """Represents a rectangle. No body."""
 
     def __init__(self, width=0, height=0):
-        """Inside the __init__ method, initialize the private instance
-        attributes __width and __height with the values of width and height"""
-        self.__width = width
-        self.__height = height
+        """Initialize a new Rectangle.
+
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+        """
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
-        """Define the getter method to retrieve the value of the __width"""
+        """Return width of the rectangle """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Define the setter method width to set the value of the __width
-        attribute. Perform necessary checks to ensure that the value is an
-        integer and not less than 0. Raise TypeError and ValueError exceptions
-        if the checks fail"""
+        """Set width of the rectangle."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -38,16 +31,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Define the getter method height to retrieve the value of
-        the __height attribute"""
+        """Return height of the rectangle."""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Define the setter method height to set the value of the __height
-        attribute. Perform necessary checks to ensure that the value is an
-        integer and not less than 0. Raise TypeError and ValueError exceptions
-        if the checks fail"""
+        """Set height of the rectangle. """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
