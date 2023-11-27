@@ -12,12 +12,14 @@ Start by defining the class Rectangle"""
 class Rectangle:
     """Inside the clas, define the __init__ method with width and
     height as optional parameters"""
+
     def __init__(self, width=0, height=0):
         """Inside the __init__ method, initialize the private instance
         attributes __width and __height with the values of width and height"""
         self.__width = width
         self.__height = height
         """Define the getter method to retrieve the value of the __width"""
+
     @property
     def width(self):
         return self.__width
@@ -25,6 +27,7 @@ class Rectangle:
         attribute. Perform necessary checks to ensure that the value is an
         integer and not less than 0. Raise TypeError and ValueError exceptions
         if the checks fail"""
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -34,6 +37,7 @@ class Rectangle:
         self.__width = value
         """Define the getter method height to retrieve the value of
         the __height attribute"""
+
     @property
     def height(self):
         return self.__height
