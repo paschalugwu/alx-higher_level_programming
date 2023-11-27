@@ -18,35 +18,36 @@ class Rectangle:
         attributes __width and __height with the values of width and height"""
         self.__width = width
         self.__height = height
-        """Define the getter method to retrieve the value of the __width"""
 
     @property
     def width(self):
+        """Define the getter method to retrieve the value of the __width"""
         return self.__width
-    """Define the setter method width to set the value of the __width
-    attribute. Perform necessary checks to ensure that the value is an
-    integer and not less than 0. Raise TypeError and ValueError exceptions
-    if the checks fail"""
 
     @width.setter
     def width(self, value):
+        """Define the setter method width to set the value of the __width
+        attribute. Perform necessary checks to ensure that the value is an
+        integer and not less than 0. Raise TypeError and ValueError exceptions
+        if the checks fail"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-        """Define the getter method height to retrieve the value of
-        the __height attribute"""
 
     @property
     def height(self):
+        """Define the getter method height to retrieve the value of
+        the __height attribute"""
         return self.__height
-    """Define the setter method height to set the value of the __height
-    attribute. Perform necessary checks to ensure that the value is an
-    integer and not less than 0. Raise TypeError and ValueError exceptions
-    if the checks fail"""
+
     @height.setter
     def height(self, value):
+        """Define the setter method height to set the value of the __height
+        attribute. Perform necessary checks to ensure that the value is an
+        integer and not less than 0. Raise TypeError and ValueError exceptions
+        if the checks fail"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
