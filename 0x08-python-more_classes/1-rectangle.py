@@ -14,8 +14,12 @@ class Rectangle:
     height as optional parameters"""
 
     def __init__(self, width=0, height=0):
-        """Inside the __init__ method, initialize the private instance
-        attributes __width and __height with the values of width and height"""
+        """Initialize a new Rectangle.
+
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+        """
         self.__width = width
         self.__height = height
         """Define the getter method to retrieve the value of the __width"""
