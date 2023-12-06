@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Write a function to print contents to stdout"""
 
 
 def read_file(filename=""):
