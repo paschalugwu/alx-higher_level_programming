@@ -1,6 +1,3 @@
-To achieve the requirements for the project, you can follow the steps below to create the README.md file. This README will guide users on how to use and understand the provided Python classes.
-
-```markdown
 # ALX Higher Level Programming - Almost a Circle
 
 This repository contains a series of Python classes that form the basis for managing geometric shapes, specifically rectangles and squares. Each class is designed to inherit from a base class that provides shared functionality and attributes.
