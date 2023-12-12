@@ -112,19 +112,6 @@ class Base:
         except IOError:
             return []
 
-    @staticmethod
-    def draw(list_rectangles, list_squares):
-        """
-        Draw Rectangles and Squares using the turtle module.
-
-        Args:
-            list_rectangles (list): A list of rectangle objects to draw.
-            list_squares (list): A list of square objects  to draw.
-        """
-        turt = turtle.Turtle()
-        # Code for drawing rectangles and squares using turtle graphics module
-        turtle.exitonclick()
-
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Write the CSV serialization of a list of objects to a file.
@@ -168,3 +155,16 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """
+        Draw Rectangles and Squares using the turtle module.
+
+        Args:
+            list_rectangles (list): A list of rectangle objects to draw.
+            list_squares (list): A list of square objects  to draw.
+        """
+        turt = turtle.Turtle()
+        # Code for drawing rectangles and squares using turtle graphics module
+        turtle.exitonclick()
