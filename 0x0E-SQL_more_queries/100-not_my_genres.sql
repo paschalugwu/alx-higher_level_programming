@@ -22,4 +22,4 @@ SELECT DISTINCT `name`
                 INNER JOIN `tv_shows` AS t
                 ON s.`show_id` = t.`id`
                 WHERE t.`title` = "Dexter")
-ORDER BY `name`;
+ORDER BY g.`name`;
