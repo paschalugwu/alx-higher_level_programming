@@ -371,4 +371,3 @@ This script adds a new function `incr` that increments the integer value in `myO
 
 ### File Location
 [103-object_fct.js](https://github.com/alx-higher_level_programming/0x12-javascript-warm_up/blob/main/103-object_fct.js)
-
