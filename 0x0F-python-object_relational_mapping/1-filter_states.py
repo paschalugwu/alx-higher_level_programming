@@ -14,11 +14,12 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host=host, user=username, passwd=password,
                          db=db_name, port=port)
     cur = db.cursor()
-    cur.execute('SELECT * FROM states WHERE name REGEXP "^N.*" ORDER BY states.id ASC')
+    cur.execute(
+        'SELECT * FROM states WHERE name REGEXP "^N.*" ORDER BY states.id ASC')
     result = cur.fetchall()
     cur.close()
     db.close()
     if result:
         for row in result:
-            if row[1][0] == "N": # Filter results to ensure only states starting with "N" are displayed
+            if row[1][0] == "N":
                 print(row)
