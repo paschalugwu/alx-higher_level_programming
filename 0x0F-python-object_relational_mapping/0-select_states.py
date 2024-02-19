@@ -6,9 +6,9 @@ import sys
 
 if __name__ == "__main__":
     """List all states in db"""
-    username = "root"
-    password = "benziopax"
-    db_name = "hbtn_0e_0_usa"
+    username = sys.argv[1]
+    password = sys.argv[2]
+    db_name = sys.argv[3]
     host = "localhost"
     port = 3306
     db = MySQLdb.connect(host=host, user=username, passwd=password,
