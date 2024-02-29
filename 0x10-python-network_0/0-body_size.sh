@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
-# Get the size of the HTTP response body using cURL
+#!/bin/bash
+# Get the size of the HTTP response
 curl -s "$1" | wc -c
