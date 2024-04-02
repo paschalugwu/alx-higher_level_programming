@@ -9,13 +9,13 @@ request(process.argv[2], function (error, response, body) {
   if (!error) {
     // Parsing the response body as JSON and accessing the 'results' property
     const results = JSON.parse(body).results;
-    
+
     // Filtering the movies to count the number of movies where "Wedge Antilles" is present
     const count = results.reduce((count, movie) => {
       // Checking if "Wedge Antilles" character ID (18) is present in the characters array of the movie
       return movie.characters.find((character) => character.endsWith('/18/'))
-        ? count + 1  // Incrementing the count if "Wedge Antilles" is found in the characters array
-        : count;     // Keeping the count unchanged if "Wedge Antilles" is not found
+        ? count + 1 // Incrementing the count if "Wedge Antilles" is found in the characters array
+        : count; // Keeping the count unchanged if "Wedge Antilles" is not found
     }, 0);
 
     // Printing the total count of movies where "Wedge Antilles" is present
